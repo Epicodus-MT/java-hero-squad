@@ -1,16 +1,10 @@
-apply plugin: 'java'
-apply plugin: 'application'
+import spark.ModelAndView;
+import spark.template.velocity.VelocityTemplateEngine;
+import static spark.Spark.*;
 
-archivesBaseName = "friend-letter"
-version = '1.0'
-mainClassName = "App"
+public class App {
 
-repositories {
-  mavenCentral()
-}
-
-dependencies {
-  compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
-  testCompile group: 'junit', name: 'junit', version: '4.+'
-  compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
 }
